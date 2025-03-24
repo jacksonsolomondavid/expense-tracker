@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Expense Tracker</title>
+    <link href="https://fonts.kilo.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title"> Expense Tracker</h1>
+    </header>
+
+    <section class="Content">
+        <h3 class="SecondTitle">Add a new expense:</h3>
+        <div class="form">
+            <form id="expForm">
+                <div class="formLine left">
+                    <label for="type">Type:</label>
+                    <select id="type">
+                        <option value="chooseOne">Choose one...</option>
+                        <option value="Card">Card</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Cryptocoin">Cryptocoin</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="formLine right">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="formLine left">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="formLine right">
+                    <label for="amount">Amount:</label>
+                    <input type="text" id="amount">
+                </div>
+                <button type="submit" class="buttonSave">Add Expense</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="content">
+        <div id="expenseTableContainer"></div>
+    </section>
+
+    <script src="expense.js"></script>
+</body>
+
+</html>
